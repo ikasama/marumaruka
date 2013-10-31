@@ -1,0 +1,160 @@
+$font-color:#2c1d1b;
+$border-grey:#d8d8d8;
+$boke-bg-color:white;
+$boke-outline-color:#727171;
+$count-border-color:#e8e8e8;
+$count-bg-color:white;
+$post-bg-color:#fafafa;
+
+@import "header";
+@import "menu";
+@import "common";
+@import "reaction";
+@import "boke-post";
+@import "animation";
+@import "packman";
+
+.odai-post{
+	width: 590px;
+	padding-bottom: 30px;
+	border:3px solid $border-grey;
+	margin: 70px auto;
+	border-radius:20px;
+	background: $post-bg-color;
+	box-shadow: 2px 2px 2px #888;
+
+	a{
+		color:#000;
+		text-decoration:none;
+
+		&:hover{
+			color:#000;
+		}
+	}
+	.icon-name{
+		float: left;
+		margin-top:0px;
+		position:relative;
+		left:10px;
+		z-index:2;
+		.user-name{
+			height: 50px;
+			line-height: 50px;
+			background: #fff7ac;
+			border-radius: 25px;
+			padding: 0px 2em;
+			font-size: 30px;
+			margin: 20px 0px;
+		}
+	}	
+
+}
+.odai-btn {
+	position:fixed;
+	bottom: 0px;
+	background: url("../img/b_odai.png") no-repeat;
+	height: 140px;
+	margin:0px 150px;
+	width: 360px;
+	z-index: 10 !important;
+	display: block;
+	border: none;
+	-webkit-transition:bottom 0.7s ease-out, opacity 0.7s ease-out;
+	opacity:0;
+}
+.slide-up{
+	bottom:100px;
+	opacity:1;
+}
+.md-content{
+	width: 590px;
+	padding-bottom: 30px;
+	border:3px solid $border-grey;
+	margin: 70px auto;
+	border-radius:20px;
+	background: $post-bg-color;
+	box-shadow: 2px 2px 2px #888;
+	#modal-title{
+		width: 300px;
+		line-height: 20px;
+		padding: 10px 0px;
+		margin: 0px 150px;
+		top: -50px;	
+	}
+	button.md-close{
+		border: solid 10px black;
+		padding: 5px;
+		border-radius: 50%;
+		height: 60px;
+		width: 60px;
+		opacity:1;
+		line-height:0px;
+		position:absolute;
+		top:10px;
+		right:10px;
+		z-index:10;
+	}
+	.submit-btn{
+		position: fixed;
+		bottom: 0px;
+		background: url("../img/b_odai.png") no-repeat;
+		height: 110px;
+		margin: 0px 125px;
+		width: 360px;
+		z-index: 10 !important;
+		display: block;
+		border: none;		
+	}
+	.boke{
+		width: 100%;
+		margin: 30px 0px 20px;
+		position: relative;
+		overflow: hidden;
+		.boke-text{
+			-webkit-transform: scale(0.9);
+			padding:15px;
+
+			textarea.odai-form{
+				margin: 0px 0px;
+				width: 356px;
+				height: 180px;
+				padding: 0px;
+				background: rgba(255,255,255,0.3);
+				border: none;
+				font-size: 40px;
+				line-height:60px;
+				color:$font-color;
+			}
+		}
+	}
+	.icon{
+		margin-top: 60px;
+		position: absolute;
+		right: 47px;
+		z-index: 2;
+		width: 80px;
+
+		.user-name{
+			height: 50px;
+			line-height: 50px;
+			background: #fff7ac;
+			border-radius: 25px;
+			padding: 0px 2em;
+			font-size: 30px;
+			margin: 20px 0px;
+		}
+		img{
+			margin-top:170px;
+		}
+	}	
+}
+
+.trig {
+	width: 0;
+	height: 0;
+	border-left: 100px solid red;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+}
+
+

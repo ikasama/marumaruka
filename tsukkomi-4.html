@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5 user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" type="text/css" href="css/component.css">
+	<link rel="stylesheet" href="scss/tsukkomi.css">
+	<title>〇〇か！</title>
+</head>
+<body>
+	<div class="container">
+		<!--header.scss-->
+		<div id="header_s">
+			<img src="img/header_logo_s.png">			
+		</div>
+
+		<div class="title child-page">
+			<strong class="title-content">
+				<h1>ツッコミ一覧</h1>
+			</strong>
+		</div>
+		<!--header.scss-->
+		<div class="one-tsukkomi-post">
+			<div class="boke">
+				<div class="icon">
+					<img src="img/icon_boke.png">
+				</div>
+				<p class="boke-text">男「あー、日焼けするーっ」</p>
+			</div>
+			<!-- /.boke -->
+
+			<div class="tsukkomi-post">
+				<div class="tsukkomi">
+					<div class="icon">
+						<div class="user-name">@chan_yuki</div>
+					</div>
+					<p class="tsukkomi-text frame-fire">女子か！</p>
+				</div>
+				<!-- /.tsukkomi -->			
+				<div class="reaction">
+					<div class="row">
+						<div class="good col-xs-4">
+							<p>秀逸！</p>
+							<p class="count-good">19</p>
+						</div>
+						<!-- /.good -->
+						<div class="normal col-xs-4">
+							<p>おしい</p>
+							<p class="count-normal">4</p>
+						</div>
+						<!-- /.nomal -->
+						<div class="bad col-xs-4">
+							<p>ズコッ</p>
+							<p class="count-bad">2</p>
+						</div>
+						<!-- /.bad -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.reaction -->
+			</div>		
+			<!-- /.tsukkomi-post -->
+
+			<div class="tsukkomi-post">
+				<div class="tsukkomi">
+					<div class="icon">
+						<div class="user-name">@chan_yuki</div>
+					</div>
+					<p class="tsukkomi-text frame-green">オカマか！</p>
+				</div>
+				<!-- /.tsukkomi -->			
+				<div class="reaction">
+					<div class="row">
+						<div class="good col-xs-4">
+							<p>秀逸！</p>
+							<p class="count-good">56</p>
+						</div>
+						<!-- /.good -->
+						<div class="normal col-xs-4">
+							<p>おしい</p>
+							<p class="count-normal">34</p>
+						</div>
+						<!-- /.nomal -->
+						<div class="bad col-xs-4">
+							<p>ズコッ</p>
+							<p class="count-bad">90</p>
+						</div>
+						<!-- /.bad -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.reaction -->
+			</div>		
+			<!-- /.tsukkomi-post -->
+		</div>
+		<!--menu.scss-->
+		<div class="menu-dummy"></div>
+		<div id="menu">
+			<ul>
+				<a href="index.php"><li class="menu-top"></li></a>
+				<a href="new.html"><li class="menu-new"></li></a>
+				<a href="odai.html"><li class="menu-odai"></li></a>
+				<a href="ranking.html"><li class="menu-ranking"></li></a>
+				<a href="mypage.html"><li class="menu-mypage"></li></a>
+			</ul>	
+		</div>
+		<!--menu.scss-->
+
+	</div>
+
+	<button class="tsukkomi-btn md-trigger" data-modal="modal-17"></button>
+	<div class="md-modal md-effect-17" id="modal-17">
+		<div class="md-content">
+			<div id="modal-title" class="title">
+				<strong class="title-content">
+					<h1>ツッコミ投稿</h1>
+				</strong>
+			</div>
+			<button type="button" class="md-close">&times;</button>
+			
+			<form action="" role="form">	
+				<div class="tsukkomi">
+					<p class="tsukkomi-text frame-red">
+						<textarea name="tsukkomi" class="tsukkomi-form">◯◯か！</textarea>
+					</p>
+				</div>		
+				<div class="thumnails">	
+					<div class="carousel">
+						<input type="radio" name="frame" id="frame-orange"　value="frame-orange">
+						<label for="frame-orange">
+							<img src="img/tsukkomi/balloon_icon_1.png">
+						</label> 
+
+						<input type="radio" name="frame" id="frame-green"　value="frame-green">	
+						<label for="frame-green">
+							<img src="img/tsukkomi/balloon_icon_2.png">
+						</label>
+
+						<input type="radio" name="frame" id="frame-purple"　value="frame-purple">
+						<label for="frame-purple">
+							<img src="img/tsukkomi/balloon_icon_3.png">
+						</label>
+
+						<input type="radio" name="frame" id="frame-red"　value="frame-red">
+						<label for="frame-red">
+							<img src="img/tsukkomi/balloon_icon_4.png">
+						</label>
+						<input type="radio" name="frame" id="frame-blue"　value="frame-blue">
+						<label for="frame-blue">
+							<img src="img/tsukkomi/balloon_icon_5.png">
+						</label>
+						<input type="radio" name="frame" id="frame-fire"　value="frame-fire">
+						<label for="frame-fire">
+							<img src="img/tsukkomi/balloon_icon_6.png">
+						</label>
+					</div>
+				</div>
+				<button type="button" class="submit-btn">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="md-overlay"></div>
+	<script src="js/modal/classie.js"></script>
+	<script src="js/modal/modalEffects.js"></script>	
+	<script src="js/minified-web.noie.js"></script>
+	<script src="js/marumaruka_common.js"></script>
+	<script src="js/tsukkomi.js"></script>
+	
+</body>
+</html>

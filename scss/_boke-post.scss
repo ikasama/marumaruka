@@ -1,0 +1,51 @@
+﻿.boke{
+	width:100%;
+	position:relative;
+	overflow:hidden;
+
+	.icon{
+		position:absolute;
+		margin-top:60px;
+		right:20px;
+		bottom:47px
+	}				
+	.boke-text{
+
+		width: 390px;
+		padding: 30px 10px;
+		display: block;
+		position: relative;
+		background: $boke-bg-color;
+		margin-left: 40px;
+		border-radius: 20px;
+		font-size: 2em;
+		font-weight: normal;
+		color: $font-color;
+		border: $boke-outline-color solid 3px;
+		margin-bottom:70px;
+
+		&:after, &:before {
+			left: 100%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+		&:after {
+			border-color: rgba(255,255,255,0);
+			border-left-color: $boke-bg-color;
+			border-width: 15px;
+			bottom: 27px;
+			margin-top: -15px;
+		}
+		&:before {
+			border-color: rgba(34,34,34,0);
+			border-left-color:$boke-outline-color;
+			border-width: 18px;
+			bottom: 23px;
+			margin-top: -22px;
+		}
+	}
+}

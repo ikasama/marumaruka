@@ -1,0 +1,81 @@
+.menu-dummy{
+	height:150px;
+	width:640px;
+}
+
+#menu {
+	width: 640px;
+	position: fixed;
+	bottom: 0px;
+	height: 108px;
+	z-index:10;
+
+	ul{
+		list-style:none;
+		height:108px;
+		width:640px;
+		padding:0px;
+		margin:0px;
+
+		li{
+			float:left;
+			width:126px;
+			height:108px;
+			background:#fff;
+			margin:0px;
+			padding:0px;
+			overflow:hidden;
+		
+			&.menu-top{
+				background:url("../img/navigation_bar_mypage.png");
+				width: 131px;
+				
+				&:active{
+					background-position:0px 110px;
+				}
+			}
+			&.menu-new{
+				background:url("../img/navigation_bar_mypage.png");
+				background-position:-131px 0px;
+				
+				&:active{
+					background-position:-131px 110px;
+				}
+			}
+			&.menu-odai{
+				background:url("../img/navigation_bar_mypage.png");
+				background-position:-257px 0px;
+				
+				&:active{
+					background-position:-257px 110px;
+				}
+			}
+			&.menu-ranking{
+				background:url("../img/navigation_bar_mypage.png");
+				background-position:-383px 0px;
+				
+				&:active{
+					background-position:-383px 110px;
+				}
+			}
+			&.menu-mypage{
+				background:url("../img/navigation_bar_mypage.png");
+				background-position:-509px 0px;
+				width:131px;
+				
+				&:active{
+					background-position:-509px 110px;
+				}
+			}
+			&.menu-login{
+				background:url("../img/navigation_bar_login.png");
+				background-position:-509px 0px;
+				width:131px;
+				
+				&:active{
+					background-position:-509px 110px;
+				}
+			}			
+		}
+	}
+}
